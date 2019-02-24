@@ -56,7 +56,7 @@ public class MyBot extends Bot {
 			if(bestChild == null) {
 				bestChild = child;
 			}
-			else if(Utility.evaluate(child, player) > Utility.evaluate(bestChild, player)) {
+			else if(Utility.evaluate(child, player) >= Utility.evaluate(bestChild, player)) {
 				bestChild = child;
 			}
 		}
