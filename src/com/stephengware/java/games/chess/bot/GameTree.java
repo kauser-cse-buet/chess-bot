@@ -61,4 +61,11 @@ public class GameTree{
 		children.add(child);
 		return child;
 	}
+
+	public boolean isTerminal(State state) {
+		if(state.over || state.searchLimitReached() || state.countDescendants() == 0) {
+			return true;
+		}
+		return false;
+	}
 }
